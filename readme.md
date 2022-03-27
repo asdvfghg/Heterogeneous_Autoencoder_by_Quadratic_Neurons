@@ -38,15 +38,15 @@ HAE_Empowered_by_Quadratic_Neurons
 │   train_ae.py # Implementation of AE\QAE\HAEs 
 │   train_DAGMM.py # Implementation of DAGMM
 │   train_RCA.py # Implementation of RCA
-└─ data # Anomaly detection datasets 
-└─ utils
-	 │   data_process.py # data_process functions for RCA and DAGMM
-	 │   QuadraticOperation.py # Quadratic neuron function
-	 │   train_function.py # Train function for quadratic network
-└─ Model
-	 │   DAGMM.py 
-	 │   HAutoEncoder.py # Contain AE\QAE\HAEs 
-	 │   RCA.py 
+└─  data # Anomaly detection datasets 
+└─  utils
+     │   data_process.py # data_process functions for RCA and DAGMM
+     │   QuadraticOperation.py # Quadratic neuron function
+     │   train_function.py # Train function for quadratic network
+└─  Model
+     │   DAGMM.py 
+     │   HAutoEncoder.py # Contain AE\QAE\HAEs 
+     │   RCA.py 
 
 ```
 
@@ -111,7 +111,10 @@ The autoencoders we used in  ```train_ae.py```  have been fine-tuning. The table
 |            | HAE-Y |      32     |    0.00100    | 0.00  |
 |            | HAE-I |      32     |    0.00100    | 0.20  |
 
-
+# Contact
+if you have any questions about our work, please contact the following email address:
+[jingxiaoliao@hit.edu.cn](jingxiaoliao@hit.edu.cn)
+Enjoy your coding!
 # Reference
 [1] Fenglei Fan, Wenxiang Cong, and Ge Wang. A new type of neurons for machine learning. International journal for numericalmethods in biomedical engineering, 34(2):e2920, 2018.
 
