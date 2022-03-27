@@ -113,7 +113,9 @@ The autoencoders we used in  ```train_ae.py```  have been fine-tuning. The table
 
 # Contact
 if you have any questions about our work, please contact the following email address:
-[jingxiaoliao@hit.edu.cn](jingxiaoliao@hit.edu.cn)
+
+jingxiaoliao@hit.edu.cn
+
 Enjoy your coding!
 # Reference
 [1] Fenglei Fan, Wenxiang Cong, and Ge Wang. A new type of neurons for machine learning. International journal for numericalmethods in biomedical engineering, 34(2):e2920, 2018.
