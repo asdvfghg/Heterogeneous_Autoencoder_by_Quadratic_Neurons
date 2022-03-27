@@ -17,13 +17,13 @@ A quadratic neuron was proposed by [1], It computes two inner products  and  one
 
 where $\sigma(\cdot)$ is a nonlinear activation function, $\odot$ denotes the Hadamard product, $\boldsymbol{w}^r,\boldsymbol{w}^g, \boldsymbol{w}^b\in\mathbb{R}^n$ are weight vectors, and $b^r, b^g, c\in\mathbb{R}$ are biases. When $\boldsymbol{w}^g=0$, $b^g=1$, and $\boldsymbol{w}^b=0$, a quadratic neuron degenerates to a conventional neuron:  $\sigma(f(\boldsymbol{x}))= \sigma(\boldsymbol{x}^\top\boldsymbol{w}^{r}+b^{r})$. 
 
-## HAE Structure
+### HAE Structure
 We propose three heterogeneous autoencoders integrating conventional  and  quadratic  neurons  in  one  model,  referred  to  as HAE-X, HAE-Y, and HAE-I, respectively.
 ![The scheme of HAE-X, HAE-Y, and HAE-I.](https://raw.githubusercontent.com/asdvfghg/image/master/小书匠/1641001696444.png)
 
-# Repository organization
+## Repository organization
 This repository is organized by three folders, which correspond to the three main experiments in our paper. Three programs (quadratic_autoencoder, ensemble_autoencoder, and heterogeneous_autoencoder) can be run independently.
-## Requirements
+### Requirements
 We use PyCharm 2021.2 to be a coding IDE, if you use the same, you can run this program directly. Other IDE we have not yet tested, maybe you need to change some settings.
 * Python == 3.8
 * PyTorch == 1.10.1
@@ -31,7 +31,7 @@ We use PyCharm 2021.2 to be a coding IDE, if you use the same, you can run this 
 * pyod == 0.9.6
 * anaconda == 2021.05
  
-## Organization
+### Organization
 ```
 HAE_Empowered_by_Quadratic_Neurons
 │   benchmark_method.py # Implementation of OCSVM, SUDO, DeepSVDD
@@ -50,10 +50,10 @@ HAE_Empowered_by_Quadratic_Neurons
 
 ```
 
-## Datasets
+### Datasets
 We use the ODDs dataset[2]. More details can be found in [Official Page of ODDs Dataset](http://odds.cs.stonybrook.edu).
 
-## How to Use
+### How to Use
 
 Run ```train_ae.py``` to train an autoencoder. We provide three heterogeneous autoencoders, a quadratic and a conventional autoencoder. 
 
@@ -65,7 +65,7 @@ Run ```/benchmark_method.py``` to train  OCSVM, SUDO, DeepSVDD. We follow the im
 
 All results will be saved to the ***'results'*** folder.
 
-# Hyperparameters
+## Hyperparameters
 The autoencoders we used in  ```train_ae.py```  have been fine-tuning. The table below are the hyperparameters we recommend  for traing. Note that RCA is also an autoencoder model, but authors use the same parameters on all datasets, so that we don't tune this model. 
 
 | datasets   | model | batch size  | learning rate | alpha |
@@ -111,13 +111,18 @@ The autoencoders we used in  ```train_ae.py```  have been fine-tuning. The table
 |            | HAE-Y |      32     |    0.00100    | 0.00  |
 |            | HAE-I |      32     |    0.00100    | 0.20  |
 
-# Contact
+## Main Results
+Here we give the main results of our paper. We use AUC as a performance metric. All resutls are run 10 times to calculate the average. The proposed method outperforms other compared baseline methods.
+
+
+
+## Contact
 if you have any questions about our work, please contact the following email address:
 
 jingxiaoliao@hit.edu.cn
 
 Enjoy your coding!
-# Reference
+## Reference
 [1] Fenglei Fan, Wenxiang Cong, and Ge Wang. A new type of neurons for machine learning. International journal for numericalmethods in biomedical engineering, 34(2):e2920, 2018.
 
 [2] Shebuti Rayana.  Odds library [http://odds.cs.stonybrook.edu]. stony brook, ny:  Stony brook university.Department of ComputerScience, 2016.
