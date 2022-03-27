@@ -114,7 +114,7 @@ The autoencoders we used in  ```train_ae.py```  have been fine-tuning. The table
 ## Main Results
 Here we give the main results of our paper. We use AUC as a performance metric. All resutls are run 10 times to calculate the average. The proposed method outperforms other compared baseline methods.
 
-
+![enter description here](https://raw.githubusercontent.com/asdvfghg/image/master/小书匠/1648373741379.png)
 
 ## Contact
 if you have any questions about our work, please contact the following email address:
