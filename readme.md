@@ -57,11 +57,11 @@ We use the ODDs dataset[2]. More details can be found in [Official Page of ODDs 
 
 Run ```train_ae.py``` to train an autoencoder. We provide three heterogeneous autoencoders, a quadratic and a conventional autoencoder. 
 
-Run ```/benchmark_method.py``` to train  OCSVM, SUDO, DeepSVDD. We follow the implementation by [pyod](https://github.com/yzhao062/pyod) package [3].
+Run ```benchmark_method.py``` to train  OCSVM, SUDO, DeepSVDD. We follow the implementation by [pyod](https://github.com/yzhao062/pyod) package [3].
  
- Run ```/train_DAGMM.py``` to train  DAGMM[4]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
+ Run ```train_DAGMM.py``` to train  DAGMM[4]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
 
- Run ```/train_RCA.py``` to train  RCA[5]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
+ Run ```train_RCA.py``` to train  RCA[5]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
 
 All results will be saved to the ***'results'*** folder.
 
@@ -117,7 +117,7 @@ Here we give the main results of our paper. We use AUC as a performance metric. 
 ![enter description here](https://raw.githubusercontent.com/asdvfghg/image/master/小书匠/1648373741379.png)
 
 ## Contact
-if you have any questions about our work, please contact the following email address:
+If you have any questions about our work, please contact the following email address:
 
 jingxiaoliao@hit.edu.cn
 
