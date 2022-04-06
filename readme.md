@@ -1,5 +1,6 @@
 # Heterogeneous Autoencoder Empowered by Quadratic Neurons
-This is the repository of our submission for IEEE Transactions on Neural Networks and Learning Systems   "Heterogeneous Autoencoder Empowered by Quadratic Neurons". In this work,
+This is the repository of our submission for IEEE Transactions on Neural Networks and Learning Systems   "Heterogeneous Autoencoder Empowered by Quadratic Neurons". Here is the preprint vision [HAE](https://arxiv.org/pdf/2204.01707.pdf) 
+In this work,
 
 1. We develop a novel autoencoder that integrates essentially different types of neurons in one model；
 2. We present a constructive theorem to show that for certain tasks, a heterogeneous network can have more efficient and powerful approximation；
