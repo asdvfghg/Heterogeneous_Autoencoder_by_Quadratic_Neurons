@@ -9,6 +9,21 @@ In this work,
 
 All experiments are conducted with Windows 10 on an AMD R5 3600 CPU at 3.60 GHz and one NVIDIA RTX 2070S 8GB GPU. We implement our model on Python 3.8 with the PyTorch package, an open-source deep learning framework.  
 
+## Citing
+If you find this repo useful for your research, please consider citing it:
+```
+@misc{liao2022heterogeneous,
+      title={Heterogeneous Autoencoder Empowered by Quadratic Neurons}, 
+      author={Jing-Xiao Liao and Bo-Jian Hou and Hang-Cheng Dong and Hao Zhang and Jianwei Ma and Jinwei Sun and Shiping Zhang and Feng-Lei Fan},
+      year={2022},
+      eprint={2204.01707},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE}
+}
+```
+
+
+
 ## Heterogeneous Autoencoder
 
 ### Quadratic Neurons
