@@ -1,5 +1,6 @@
 # Heterogeneous Autoencoder Empowered by Quadratic Neurons
-This is the repository of our submission for IEEE Transactions on Neural Networks and Learning Systems   "Heterogeneous Autoencoder Empowered by Quadratic Neurons". In this work,
+This is the repository of our submission for IEEE Transactions on Neural Networks and Learning Systems   "Heterogeneous Autoencoder Empowered by Quadratic Neurons". Here is the preprint vision [https://arxiv.org/pdf/2204.01707.pdf](https://arxiv.org/pdf/2204.01707.pdf).
+In this work,
 
 1. We develop a novel autoencoder that integrates essentially different types of neurons in one model；
 2. We present a constructive theorem to show that for certain tasks, a heterogeneous network can have more efficient and powerful approximation；
@@ -7,6 +8,21 @@ This is the repository of our submission for IEEE Transactions on Neural Network
 
 
 All experiments are conducted with Windows 10 on an AMD R5 3600 CPU at 3.60 GHz and one NVIDIA RTX 2070S 8GB GPU. We implement our model on Python 3.8 with the PyTorch package, an open-source deep learning framework.  
+
+## Citing
+If you find this repo useful for your research, please consider citing it:
+```
+@misc{liao2022heterogeneous,
+      title={Heterogeneous Autoencoder Empowered by Quadratic Neurons}, 
+      author={Jing-Xiao Liao and Bo-Jian Hou and Hang-Cheng Dong and Hao Zhang and Jianwei Ma and Jinwei Sun and Shiping Zhang and Feng-Lei Fan},
+      year={2022},
+      eprint={2204.01707},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE}
+}
+```
+
+
 
 ## Heterogeneous Autoencoder
 
@@ -57,11 +73,11 @@ We use the ODDs dataset[2]. More details can be found in [Official Page of ODDs 
 
 Run ```train_ae.py``` to train an autoencoder. We provide three heterogeneous autoencoders, a quadratic and a conventional autoencoder. 
 
-Run ```/benchmark_method.py``` to train  OCSVM, SUDO, DeepSVDD. We follow the implementation by [pyod](https://github.com/yzhao062/pyod) package [3].
+Run ```benchmark_method.py``` to train  OCSVM, SUDO, DeepSVDD. We follow the implementation by [pyod](https://github.com/yzhao062/pyod) package [3].
  
- Run ```/train_DAGMM.py``` to train  DAGMM[4]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
+ Run ```train_DAGMM.py``` to train  DAGMM[4]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
 
- Run ```/train_RCA.py``` to train  RCA[5]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
+ Run ```train_RCA.py``` to train  RCA[5]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
 
 All results will be saved to the ***'results'*** folder.
 
@@ -117,7 +133,7 @@ Here we give the main results of our paper. We use AUC as a performance metric. 
 ![enter description here](https://raw.githubusercontent.com/asdvfghg/image/master/小书匠/1648373741379.png)
 
 ## Contact
-if you have any questions about our work, please contact the following email address:
+If you have any questions about our work, please contact the following email address:
 
 jingxiaoliao@hit.edu.cn
 
