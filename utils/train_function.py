@@ -16,10 +16,20 @@ train functions for quadratic models
 
 # region QAE
 def group_parameters(m):
-    group_r = list(map(lambda x: x[1], list(filter(lambda kv: '_r' in kv[0], m.named_parameters()))))
-    group_g = list(map(lambda x: x[1], list(filter(lambda kv: '_g' in kv[0], m.named_parameters()))))
-    group_b = list(map(lambda x: x[1], list(filter(lambda kv: '_b' in kv[0], m.named_parameters()))))
-    return group_r, group_g, group_b
+    group_r, group_g, group_b, group_others = [], [], [], []
+    for name, p in m.named_parameters():
+        if '_r' in name:
+            group_r += [p]
+        elif '_g' in name:
+            group_g += [p]
+        elif '_b' in name:
+            group_b += [p]
+        else:
+            group_others += [p]
+
+    return (group_r, group_g, group_b, group_others)
+
+
 
 
 # endregion

@@ -730,14 +730,16 @@ class AutoEncoder(BaseDetector):
             Train data.
         """
         if self.quadratic:
-            group_r, group_g, group_b = group_parameters(self.model)
+            group_r, group_g, group_b, group_others = group_parameters(self.model)
             sub_rate = self.sub_learning_rate * self.learning_rate
             optimizer = torch.optim.Adam([
                 {"params": group_r},
                 {"params": group_g, "lr": sub_rate},
                 {"params": group_b, "lr": sub_rate},
+                {"params": group_others},
             ], lr=self.learning_rate, weight_decay=self.weight_decay)
 
+            pass
         else:
             optimizer = torch.optim.Adam(
                 self.model.parameters(), lr=self.learning_rate,
