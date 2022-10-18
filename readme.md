@@ -38,7 +38,7 @@ We propose three heterogeneous autoencoders integrating conventional  and  quadr
 ![The scheme of HAE-X, HAE-Y, and HAE-I.](https://raw.githubusercontent.com/asdvfghg/image/master/小书匠/1641001696444.png)
 
 ## Repository organization
-This repository is organized by three folders, which correspond to the three main experiments in our paper. Three programs (quadratic_autoencoder, ensemble_autoencoder, and heterogeneous_autoencoder) can be run independently.
+
 ### Requirements
 We use PyCharm 2021.2 to be a coding IDE, if you use the same, you can run this program directly. Other IDE we have not yet tested, maybe you need to change some settings.
 * Python == 3.8
