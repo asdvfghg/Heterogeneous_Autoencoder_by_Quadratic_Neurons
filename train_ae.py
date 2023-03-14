@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
     # we only use AUCs for comparison in the paper, however, the program will compute other metrics.
     auc = round(roc_auc_score(y_test, test_scores), ndigits=4)
-    precision, recall, f1, _ = precision_recall_fscore_support(y_test, y_predict, average='binary')
+    precision, recall, f1, _ = precision_recall_fscore_support(y_test, y_predict, average='macro')
     precision = round(precision, ndigits=4)
     recall = round(recall, ndigits=4)
     f1 = round(f1, ndigits=4)
