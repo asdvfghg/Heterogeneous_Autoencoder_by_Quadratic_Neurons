@@ -44,8 +44,8 @@ def random_seed(seed: int):
 if __name__ == "__main__":
 
     mat_file_list = [
-        'arrhythmia.mat',
-        # 'glass.mat',
+        # 'arrhythmia.mat',
+        'glass.mat',
         # 'musk.mat',
         # 'optdigits.mat',
         # 'pendigits.mat',
@@ -57,10 +57,10 @@ if __name__ == "__main__":
     ae_model = 'HAE_X'  # Available parameter:  AE, QAE, HAE_X, HAE_Y, HAE_I
     # Default hyperparameters, all need to careful design for different data sets.
 
-    learning_rate = 0.0008
-    batch_size = 32
-    alpha = 0.35 # In AE models, sub_learning_rate is not used, but we recommend to set 0.0 for a mark.
-    epochs = 1000
+    learning_rate = 0.001
+    batch_size = 128
+    alpha = 0.05 # In AE models, sub_learning_rate is not used, but we recommend to set 0.0 for a mark.
+    epochs = 100
 
     mat_file = mat_file_list[0]
     df_columns = ['AUC', 'Pre', 'Recall', 'F1']

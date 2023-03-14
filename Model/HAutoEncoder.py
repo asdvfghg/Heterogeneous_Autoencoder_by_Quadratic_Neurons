@@ -752,7 +752,7 @@ class AutoEncoder(BaseDetector):
             overall_loss = []
             for data, data_idx in train_loader:
                 data = data.to(self.device).float()
-                _, dat = self.model(data)
+                dat = self.model(data)
                 loss = self.loss_fn(data, dat)
 
                 self.model.zero_grad()
@@ -806,10 +806,10 @@ class AutoEncoder(BaseDetector):
         with torch.no_grad():
             for i, (data, idx) in enumerate(dataloader):
                 data_cuda = data.to(self.device).float()
-                latent, predict = self.model(data_cuda)
+                predict = self.model(data_cuda)
                 predict = predict.cpu().numpy()
-                latent = latent.cpu().numpy()
-                self.latent_list.append(latent)
+                # latent = latent.cpu().numpy()
+                # self.latent_list.append(latent)
                 # this is the outlier score
                 score = pairwise_distances_no_broadcast(
                     data, predict)
