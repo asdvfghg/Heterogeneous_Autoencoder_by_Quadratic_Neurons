@@ -1,5 +1,5 @@
 # Heterogeneous Autoencoder Empowered by Quadratic Neurons
-This is the repository of our submission for IEEE Transactions on Neural Networks and Learning Systems   "Heterogeneous Autoencoder Empowered by Quadratic Neurons". Here is the preprint vision [https://arxiv.org/pdf/2204.01707.pdf](https://arxiv.org/pdf/2204.01707.pdf).
+This is the repository of our paper "Quadratic Neuron-empowered Heterogeneous Autoencoder for Unsupervised Anomaly Detection". [Paper](https://arxiv.org/pdf/2204.01707.pdf).
 In this work,
 
 1. We develop a novel autoencoder that integrates essentially different types of neurons in one model；
@@ -80,57 +80,6 @@ Run ```benchmark_method.py``` to train  OCSVM, SUDO, DeepSVDD. We follow the imp
  Run ```train_RCA.py``` to train  RCA[5]. We follow the implementation by [RCA](https://github.com/illidanlab/RCA).
 
 All results will be saved to the ***'results'*** folder.
-
-## Hyperparameters
-The autoencoders we used in  ```train_ae.py```  have been fine-tuning. The table below are the hyperparameters we recommend  for traing. Note that RCA is also an autoencoder model, but authors use the same parameters on all datasets, so that we don't tune this model. 
-
-| datasets   | model | batch size  | learning rate | alpha |
-|------------|:-----:|:-----------:|:-------------:|:-----:|
-| arrhythmia |   AE  |     128     |    0.00030    |   -   |
-|            |  QAE  |      64     |    0.00008    | 0.15  |
-|            | HAE-X |     128     |    0.00008    | 0.05  |
-|            | HAE-Y |     128     |    0.00008    | 0.05  |
-|            | HAE-I |     128     |    0.00008    | 0.00  |
-| glass      |   AE  |     128     |    0.00008    |   -   |
-|            |  QAE  |     128     |    0.00100    | 0.35  |
-|            | HAE-X |     128     |    0.00030    | 0.00  |
-|            | HAE-Y |     128     |    0.00100    | 0.30  |
-|            | HAE-I |     128     |    0.00030    | 0.00  |
-| musk       |   AE  |      32     |    0.00100    |   -   |
-|            |  QAE  |      32     |    0.00100    | 0.00  |
-|            | HAE-X |      32     |    0.00100    | 0.00  |
-|            | HAE-Y |      32     |    0.00100    | 0.00  |
-|            | HAE-I |      32     |    0.00100    | 0.00  |
-| optdigits  |   AE  |      64     |    0.00080    |   -   |
-|            |  QAE  |      32     |    0.00080    | 0.35  |
-|            | HAE-X |      64     |    0.00008    | 0.30  |
-|            | HAE-Y |     128     |    0.00008    | 0.30  |
-|            | HAE-I |     128     |    0.00080    | 0.35  |
-| pendigits  |   AE  |     128     |    0.00008    |   -   |
-|            |  QAE  |      64     |    0.00100    | 0.15  |
-|            | HAE-X |      64     |    0.00008    | 0.20  |
-|            | HAE-Y |      64     |    0.00100    | 0.05  |
-|            | HAE-I |     128     |    0.00008    | 0.30  |
-| pima       |   AE  |      32     |    0.00030    |   -   |
-|            |  QAE  |      32     |    0.00080    | 0.15  |
-|            | HAE-X |      32     |    0.00100    | 0.05  |
-|            | HAE-Y |      32     |    0.00080    | 0.05  |
-|            | HAE-I |      64     |    0.00080    | 0.35  |
-| vertebral  |   AE  |     128     |    0.00008    |   -   |
-|            |  QAE  |     128     |    0.00008    | 0.25  |
-|            | HAE-X |     128     |    0.00008    | 0.25  |
-|            | HAE-Y |     128     |    0.00008    | 0.20  |
-|            | HAE-I |     128     |    0.00008    | 0.05  |
-| wbc        |   AE  |      32     |    0.00008    |   -   |
-|            |  QAE  |      32     |    0.00050    | 0.25  |
-|            | HAE-X |      32     |    0.00100    | 0.00  |
-|            | HAE-Y |      32     |    0.00100    | 0.00  |
-|            | HAE-I |      32     |    0.00100    | 0.20  |
-
-## Main Results
-Here we give the main results of our paper. We use AUC as a performance metric. All resutls are run 10 times to calculate the average. The proposed method outperforms other compared baseline methods.
-
-![enter description here](https://raw.githubusercontent.com/asdvfghg/image/master/小书匠/1648373741379.png)
 
 ## Contact
 If you have any questions about our work, please contact the following email address:
