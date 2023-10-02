@@ -1,4 +1,4 @@
-# Heterogeneous Autoencoder Empowered by Quadratic Neurons
+# Quadratic Neuron-empowered Heterogeneous Autoencoder for Unsupervised Anomaly Detection
 This is the repository of our paper "Quadratic Neuron-empowered Heterogeneous Autoencoder for Unsupervised Anomaly Detection". [Paper](https://arxiv.org/pdf/2204.01707.pdf).
 In this work,
 
