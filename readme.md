@@ -1,13 +1,9 @@
 # Quadratic Neuron-empowered Heterogeneous Autoencoder for Unsupervised Anomaly Detection
-This is the repository of our paper "Quadratic Neuron-empowered Heterogeneous Autoencoder for Unsupervised Anomaly Detection". [Paper](https://arxiv.org/pdf/2204.01707.pdf).
-In this work,
+This is the repository of our paper "Quadratic Neuron-empowered Heterogeneous Autoencoder for Unsupervised Anomaly Detection". [Paper](https://arxiv.org/pdf/2204.01707.pdf), which has been accepted in IEEE Transactions on Artificial Intelligence
 
-1. We develop a novel autoencoder that integrates essentially different types of neurons in one model；
-2. We present a constructive theorem to show that for certain tasks, a heterogeneous network can have more efficient and powerful approximation；
-3. Experiments on anomaly detection suggest that the proposed heterogeneous autoencoder delivers competitive performance compare to baseline.
-
-
-All experiments are conducted with Windows 10 on an AMD R5 3600 CPU at 3.60 GHz and one NVIDIA RTX 2070S 8GB GPU. We implement our model on Python 3.8 with the PyTorch package, an open-source deep learning framework.  
+## Abstract
+Inspired by the complexity and diversity of biological neurons, a quadratic neuron is proposed to replace the inner product in the current neuron with a simplified quadratic function. Employing such a novel type of neurons offers a new perspective on developing deep learning. When analyzing quadratic neurons, we find that there exists a function such that a heterogeneous network can approximate it well with a polynomial number of neurons but a purely conventional or quadratic network needs an exponential number of neurons to achieve the same level of error. Encouraged by this inspiring theoretical result on heterogeneous networks, we directly integrate conventional and quadratic neurons in an autoencoder to make a new type of heterogeneous autoencoders. To our best knowledge, it is the first heterogeneous autoencoder that is made of different types of neurons. Next, we apply the proposed heterogeneous autoencoder
+to unsupervised anomaly detection for tabular data and bearing fault signals. The anomaly detection faces difficulties such as data unknownness, anomaly feature heterogeneity, and feature unnoticeability, which is suitable for the proposed heterogeneous autoencoder. Its high feature representation ability can characterize a variety of anomaly data (heterogeneity), discriminate the anomaly from the normal (unnoticeability), and accurately learn the distribution of normal samples (unknownness). Experiments show that heterogeneous autoencoders perform competitively compared to other state-of-the-art models.
 
 ## Citing
 If you find this repo useful for your research, please consider citing it:
